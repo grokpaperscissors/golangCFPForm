@@ -36,6 +36,7 @@ function addPresenter() {
         if (input) {
             input.id += num;
             input.value = '';
+            input.name += num;
         }
     });
 

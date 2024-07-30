@@ -1,0 +1,14 @@
+{
+  "name": "gcfp",
+  "version": "1.0.0",
+  "description": "Golang CFP Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "alt-shreya",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

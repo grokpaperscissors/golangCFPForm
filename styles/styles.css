@@ -1,0 +1,106 @@
+body {
+    background-color: #F4EDE4; /* Similar light beige background */
+    font-family: 'Archivo', sans-serif; /* A clean, simple font */
+    color: #333; /* Dark gray text for better readability */
+    padding: 20px; /* Padding to prevent content from sticking to edges */
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 16px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.main-form{
+    background-color: #fff; /* Optional if you want a white background for the form area */
+    padding: 30px;
+    border-radius: 8px; /* Optional for slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+    width: 80%; /* Adjust based on preference */
+    margin: 20px auto; /* Centering the form */
+}
+
+.display-1 {
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #333; /* Dark color for headings */
+    margin-bottom: 20px; /* Space below headings */
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space between each field */
+    border: 2px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Slightly rounded borders */
+}
+
+label {
+    font-size: large;
+}
+
+textarea {
+    height: 100px; /* Fixed height for textarea */
+}
+
+.add-more-btn, .sub-btn{
+    color: black;
+    border: none; /* No border */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    margin-top: 20px; /* Space above the button */
+    margin-bottom: 20px;
+}
+
+.add-more-btn {
+    background-color: #b1c5ff;
+}
+
+.sub-btn {
+    background-color: #b6ffc0;
+
+}
+.rmv-btn {
+    background-color: #ff764d;
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    margin-top: 20px; /* Space above the button */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.add-more-btn:hover, .sub-btn:hover {
+    background-color: #0000ff; /* Slightly darker on hover */
+    color: white;
+}
+
+.rmv-btn:hover {
+    background-color: red; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+    .main-form{
+        width: 95%; /* More width on smaller screens */
+        padding: 20px;
+    }
+}
+
+.presenter-heading {
+    margin-top: 50px;
+}

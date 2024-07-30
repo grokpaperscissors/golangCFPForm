@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- global style -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        [class*="col"] {
+            padding: 1rem;
+            background-color: #fff;
+            border: 2px solid #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://formsubmit.co/wtashreyakumar@gmail.com" method="POST">
+        <div class="container main-form">
+            <div class="md-4">
+                <div class="text-center">
+                <h1 class="display-1">Call For Proposals</h1>
+                <h5 class="text-body-secondary">Want to present a talk at the next Golang Bangalore Meetup? Fill out this form and we'll reach out to you!</h5>
+                </div>
+                
+                <h2 class="presenter-heading">Presenter/Primary Contact Person Details</h2>
+                <div class="presenter-container" id="presenter-container">
+                    <div class="col-md-8">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control name" required id="name">
+                        </div>
+                    
+                    <div class="col-md-8">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control email" required id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone or spam you. Trust.</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="speaker-bio" class="form-label">Speaker's Bio</label>
+                                <textarea class="form-control speaker-bio" id="speaker-bio" rows="2"></textarea>    
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+                <button type="button" class="btn btn-info add-more-btn" id="add-presenter">Add More Speakers</button>
+                
+            
+            
+            
+            <div class="presentation-details" id="presentation-details">
+            <h2>Presentation Details</h2>
+                <div class="col-12">
+                    <label for="title" class="form-label">Presentation Title</label>
+                    <input type="text" class="form-control" id="title" required> 
+                </div>
+
+                <div class="col-12">
+                    <label for="description" class="form-label">Presentation Description</label>
+                    <textarea class="form-control" id="description" required rows="5"></textarea>    
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label for="duration" class="form-label">Duration (mins)</label>
+                            <input type="number" class="form-control" id="duration" required>    
+                        </div>
+                        <div class="col-lg-10">
+                            <label for="avEquipment" class="form-label">Please indicate what (if any) audio-visual equipment may be required</label>
+                            <input type="text" class="form-control" required id="avEquipment">
+                        </div>        
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg sub-btn">Send Email</button>
+            </div>
+        </div>
+        </div>
+
+    </form>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="scripts/presenter.js"></script>
+</body>
+</html>

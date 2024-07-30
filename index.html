@@ -42,7 +42,7 @@
                 
                 <h2 class="presenter-heading">Presenter/Primary Contact Person Details</h2>
                 <div class="presenter-container" id="presenter-container">
-                    <!-- <img src="assets/thumbnail.png" width="500px" class="img-fluid go-thumbnail" alt="Gopher, the Go mascot, writing a letter"> -->
+                    <img src="assets/thumbnail.png" width="500px" class="img-fluid go-thumbnail" alt="Gopher, the Go mascot, writing a letter">
                     <div class="col-md-7">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control name" required id="name" name="Name">
@@ -81,6 +81,11 @@
                     <textarea class="form-control" id="description" required rows="5" name="Presentation&nbsp;Description"></textarea>    
                 </div>
 
+                <div class="col-lg-10">
+                    <label for="slide-deck-url" class="form-label">Slide Deck URL</label>
+                    <input type="text" class="form-control" id="slide-deck-url" name="Slide&nbsp;Deck&nbsp;URL">
+                </div>
+
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-2">
@@ -92,6 +97,8 @@
                             <input type="text" class="form-control" id="avEquipment" name="AV&nbsp;Equipment&nbsp;Requirement">
                         </div>        
                     </div>
+                
+                    
                 </div>
                 
                 <button type="submit" class="btn btn-primary btn-lg sub-btn">Send Email</button>
